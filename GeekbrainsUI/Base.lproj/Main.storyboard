@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeekbrainsUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Авторизация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-Ea-6iV">
+                                <rect key="frame" x="129.5" y="74" width="155" height="29"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chI-cH-qQL">
+                                <rect key="frame" x="107" y="204" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="J5B-vo-hbA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0G-Ch-7Df">
+                                <rect key="frame" x="107" y="339" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="o9z-Kx-CgO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRy-CL-MPh">
+                                <rect key="frame" x="180.5" y="153" width="53.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNI-z7-exR">
+                                <rect key="frame" x="174" y="288" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI1-wx-SGf">
+                                <rect key="frame" x="173.5" y="423" width="67" height="31"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Войти">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Registration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Icz-PX-Yev"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRy-CL-MPh" firstAttribute="top" secondItem="Oyq-Ea-6iV" secondAttribute="bottom" constant="50" id="EvP-Is-XxP"/>
+                            <constraint firstItem="WNI-z7-exR" firstAttribute="top" secondItem="chI-cH-qQL" secondAttribute="bottom" constant="50" id="GuY-Gs-S7C"/>
+                            <constraint firstItem="r0G-Ch-7Df" firstAttribute="top" secondItem="WNI-z7-exR" secondAttribute="bottom" constant="30" id="JJt-e6-XgC"/>
+                            <constraint firstItem="gI1-wx-SGf" firstAttribute="top" secondItem="r0G-Ch-7Df" secondAttribute="bottom" constant="50" id="QkU-PE-SRJ"/>
+                            <constraint firstItem="r0G-Ch-7Df" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UXG-qM-jXd"/>
+                            <constraint firstItem="ZRy-CL-MPh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="be2-AC-SyS"/>
+                            <constraint firstItem="gI1-wx-SGf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c9c-dk-NaM"/>
+                            <constraint firstItem="chI-cH-qQL" firstAttribute="top" secondItem="ZRy-CL-MPh" secondAttribute="bottom" constant="30" id="fM2-5s-xyJ"/>
+                            <constraint firstItem="Oyq-Ea-6iV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="g29-6F-k1I"/>
+                            <constraint firstItem="WNI-z7-exR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nyG-ru-eJX"/>
+                            <constraint firstItem="chI-cH-qQL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pmo-of-Xmc"/>
+                            <constraint firstItem="Oyq-Ea-6iV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="uFu-aK-Wcj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Login" destination="chI-cH-qQL" id="2tk-Yx-a3I"/>
+                        <outlet property="Password" destination="r0G-Ch-7Df" id="IBk-Lw-CTw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
