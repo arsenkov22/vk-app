@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var Login: UITextField!
     
     @IBOutlet weak var Password: UITextField!
@@ -31,5 +31,22 @@ class ViewController: UIViewController {
         }
         print(loginInput + " " + passWordInput)
     }
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let login = Login.text!
+        let password = Password.text!
+        if login == "1" && password == "1" { return true
+        } else {
+            // Создаем контроллер
+            let alert = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+            // Создаем кнопку для UIAlertController
+            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            // Добавляем кнопку на UIAlertController
+            alert.addAction(action)
+            // Показываем UIAlertController
+            present(alert, animated: true, completion: nil)
+            return false
+        }
+    }
+    
 }
 
