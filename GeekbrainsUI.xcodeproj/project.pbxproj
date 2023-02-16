@@ -19,7 +19,10 @@
 		84490CB4298FE40E00802C22 /* NewGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84490CB3298FE40E00802C22 /* NewGroupTableViewCell.swift */; };
 		84490CB6298FE60200802C22 /* NewGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84490CB5298FE60200802C22 /* NewGroups.swift */; };
 		84490CB8298FE64F00802C22 /* ModelNewGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84490CB7298FE64F00802C22 /* ModelNewGroups.swift */; };
-		8489661C299E0249008C2FCE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489661B299E0249008C2FCE /* GalleryViewController.swift */; };
+		84896620299E3CCC008C2FCE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489661F299E3CCC008C2FCE /* GalleryViewController.swift */; };
+		84896622299E456F008C2FCE /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84896621299E456F008C2FCE /* PhotoGallery.swift */; };
+		84896625299E4868008C2FCE /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84896623299E4868008C2FCE /* PhotoCollectionViewCell.swift */; };
+		84896626299E4868008C2FCE /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84896624299E4868008C2FCE /* PhotoCollectionViewCell.xib */; };
 		849E0C20295999F3004814BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E0C1F295999F3004814BA /* AppDelegate.swift */; };
 		849E0C22295999F3004814BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E0C21295999F3004814BA /* SceneDelegate.swift */; };
 		849E0C24295999F3004814BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E0C23295999F3004814BA /* ViewController.swift */; };
@@ -41,7 +44,10 @@
 		84490CB3298FE40E00802C22 /* NewGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupTableViewCell.swift; sourceTree = "<group>"; };
 		84490CB5298FE60200802C22 /* NewGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroups.swift; sourceTree = "<group>"; };
 		84490CB7298FE64F00802C22 /* ModelNewGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNewGroups.swift; sourceTree = "<group>"; };
-		8489661B299E0249008C2FCE /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		8489661F299E3CCC008C2FCE /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryViewController.swift; path = ../../GalleryViewController.swift; sourceTree = "<group>"; };
+		84896621299E456F008C2FCE /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
+		84896623299E4868008C2FCE /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		84896624299E4868008C2FCE /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		849E0C1C295999F3004814BA /* GeekbrainsUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekbrainsUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849E0C1F295999F3004814BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849E0C21295999F3004814BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,15 @@
 			path = NewGroups;
 			sourceTree = "<group>";
 		};
+		84896627299E4890008C2FCE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84896623299E4868008C2FCE /* PhotoCollectionViewCell.swift */,
+				84896624299E4868008C2FCE /* PhotoCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		849E0C13295999F3004814BA = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +148,9 @@
 		84D1A3FF299246FE00867C8B /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				8489661B299E0249008C2FCE /* GalleryViewController.swift */,
+				8489661F299E3CCC008C2FCE /* GalleryViewController.swift */,
+				84896621299E456F008C2FCE /* PhotoGallery.swift */,
+				84896627299E4890008C2FCE /* Cells */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -197,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849E0C2C295999F6004814BA /* LaunchScreen.storyboard in Resources */,
+				84896626299E4868008C2FCE /* PhotoCollectionViewCell.xib in Resources */,
 				849E0C29295999F6004814BA /* Assets.xcassets in Resources */,
 				849E0C27295999F3004814BA /* Main.storyboard in Resources */,
 			);
@@ -214,13 +232,15 @@
 				84490CAB298FB82B00802C22 /* GroupTableViewCell.swift in Sources */,
 				84490C9F298E7E8000802C22 /* FriendsViewController.swift in Sources */,
 				849E0C24295999F3004814BA /* ViewController.swift in Sources */,
-				8489661C299E0249008C2FCE /* GalleryViewController.swift in Sources */,
+				84896625299E4868008C2FCE /* PhotoCollectionViewCell.swift in Sources */,
+				84896620299E3CCC008C2FCE /* GalleryViewController.swift in Sources */,
 				84490CB8298FE64F00802C22 /* ModelNewGroups.swift in Sources */,
 				84490CAD298FC89C00802C22 /* Group.swift in Sources */,
 				84490CB6298FE60200802C22 /* NewGroups.swift in Sources */,
 				84490CB2298FDED300802C22 /* NewGroupsViewController.swift in Sources */,
 				84490CA3298EB1D600802C22 /* User.swift in Sources */,
 				849E0C20295999F3004814BA /* AppDelegate.swift in Sources */,
+				84896622299E456F008C2FCE /* PhotoGallery.swift in Sources */,
 				84490CA9298FAC4900802C22 /* GroupsViewController.swift in Sources */,
 				84490CA5298EB45500802C22 /* ModelUser.swift in Sources */,
 				849E0C22295999F3004814BA /* SceneDelegate.swift in Sources */,

@@ -203,7 +203,7 @@
                                         <connections>
                                             <outlet property="nameLebel" destination="dLE-pJ-Iih" id="yhw-En-UVd"/>
                                             <outlet property="userImageView" destination="EZC-Jy-M5O" id="Vzh-9Q-QMj"/>
-                                            <segue destination="ruM-81-vyR" kind="show" id="8pY-2u-oub"/>
+                                            <segue destination="ruM-81-vyR" kind="show" id="OVY-kq-x77"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -227,26 +227,26 @@
             </objects>
             <point key="canvasLocation" x="2028.985507246377" y="-642.1875"/>
         </scene>
-        <!--View Controller-->
+        <!--Gallery View Controller-->
         <scene sceneID="DXV-Mo-q0Z">
             <objects>
-                <viewController id="ruM-81-vyR" sceneMemberID="viewController">
+                <viewController id="ruM-81-vyR" customClass="GalleryViewController" customModule="GeekbrainsUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e0S-qm-cVo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xc4-Fn-CSa">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xc4-Fn-CSa">
                                 <rect key="frame" x="0.0" y="56" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fcg-tW-pRv">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Fcg-tW-pRv">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Ml-t1-lGw">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="2" y="2" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="k2r-w6-Uzm">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -259,13 +259,16 @@
                         <viewLayoutGuide key="safeArea" id="Er1-Ev-J2f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xc4-Fn-CSa" firstAttribute="leading" secondItem="Er1-Ev-J2f" secondAttribute="leading" id="FCr-nJ-E3E"/>
-                            <constraint firstItem="Er1-Ev-J2f" firstAttribute="bottom" secondItem="xc4-Fn-CSa" secondAttribute="bottom" id="Fi3-J3-Rvc"/>
-                            <constraint firstItem="Er1-Ev-J2f" firstAttribute="trailing" secondItem="xc4-Fn-CSa" secondAttribute="trailing" id="kvd-UQ-pfm"/>
-                            <constraint firstItem="xc4-Fn-CSa" firstAttribute="top" secondItem="Er1-Ev-J2f" secondAttribute="top" id="wtH-5C-xKd"/>
+                            <constraint firstItem="xc4-Fn-CSa" firstAttribute="trailing" secondItem="Er1-Ev-J2f" secondAttribute="trailing" id="HhK-pa-e2c"/>
+                            <constraint firstItem="xc4-Fn-CSa" firstAttribute="bottom" secondItem="Er1-Ev-J2f" secondAttribute="bottom" id="dFn-e8-1uM"/>
+                            <constraint firstItem="xc4-Fn-CSa" firstAttribute="leading" secondItem="Er1-Ev-J2f" secondAttribute="leading" id="l0N-20-K64"/>
+                            <constraint firstItem="xc4-Fn-CSa" firstAttribute="top" secondItem="Er1-Ev-J2f" secondAttribute="top" id="xhB-ky-kVd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1zR-ui-EEf"/>
+                    <connections>
+                        <outlet property="collection" destination="xc4-Fn-CSa" id="fOb-n0-o0T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhu-nJ-m2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

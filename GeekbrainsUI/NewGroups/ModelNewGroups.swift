@@ -14,10 +14,10 @@ class ModelNewGroups{
     }
     func setup(){
         let group1 = NewGroups(name: "Вконтакте", image: UIImage(named: "image1")!)
-        let group2 = NewGroups(name: "ОГОНЬ", image: UIImage(named: "Image10")!)
-        let group3 = NewGroups(name: "Я МАСТЕР", image: UIImage(named: "Image11")!)
-        let group4 = NewGroups(name: "Федор Емельяненко", image: UIImage(named: "Image13")!)
-        let group5 = NewGroups(name: "Универ спорта", image: UIImage(named: "Image12")!)
+        let group2 = NewGroups(name: "ОГОНЬ", image: UIImage(named: "image10")!)
+        let group3 = NewGroups(name: "Я МАСТЕР", image: UIImage(named: "image11")!)
+        let group4 = NewGroups(name: "Федор Емельяненко", image: UIImage(named: "image13")!)
+        let group5 = NewGroups(name: "Универ спорта", image: UIImage(named: "image12")!)
 
         
         newGroups.append(group1)
