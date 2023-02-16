@@ -9,13 +9,14 @@ import UIKit
 
 class NewGroupsViewController: UIViewController {
 
+    
     @IBOutlet weak var tableView: UITableView!
     let cellID = "NewGroupTableViewCell"
     var modelNewGroups = ModelNewGroups()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      
         tableView.delegate = self
         tableView.dataSource = self
     }
